@@ -30,7 +30,6 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
-import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
 
 // Presentation page components
@@ -49,9 +48,9 @@ function Presentation() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
+          route: "https://apps.apple.com/no/app/mapr/id6450910273?l=nb",
           label: "free download",
-          color: "info",
+          color: "dark",
         }}
         sticky
       />
@@ -70,7 +69,7 @@ function Presentation() {
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
             <MKTypography
               variant="h1"
-              color="white"
+              color="black"
               mt={-6}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
@@ -83,7 +82,7 @@ function Presentation() {
             </MKTypography>
             <MKTypography
               variant="body1"
-              color="white"
+              color="black"
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
               mt={1}
@@ -106,7 +105,6 @@ function Presentation() {
       >
         <Counters />
         <Information />
-        <Testimonials />
         <Download />
         <MKBox pt={18} pb={6}>
           <Container>
