@@ -42,21 +42,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    Experience
                     <br />
-                    Material Kit
+                    Mapr
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description=""
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                title="Mapr App"
+                description=""
                 action={{
                   type: "internal",
                   route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  label: "Download on the AppStore",
                 }}
               />
             </RotatingCard>

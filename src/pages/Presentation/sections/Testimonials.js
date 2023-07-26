@@ -46,11 +46,7 @@ function Information() {
         >
           <MKTypography variant="h2">Trusted by over</MKTypography>
           <MKTypography variant="h2" color="info" textGradient mb={2}>
-            1,679,477+ web developers
-          </MKTypography>
-          <MKTypography variant="body1" color="text" mb={2}>
-            Many Fortune 500 companies, startups, universities and governmental institutions love
-            Creative Tim&apos;s products.
+            100+ Craftsmen
           </MKTypography>
         </Grid>
         <Grid container spacing={3} sx={{ mt: 8 }}>
