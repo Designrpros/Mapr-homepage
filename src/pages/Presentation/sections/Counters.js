@@ -12,11 +12,11 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+/* eslint-disable */
 
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -24,35 +24,44 @@ import MKBox from "components/MKBox";
 // Material Kit 2 React examples
 import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
 
+import AllProjects from "assets/images/Allprojects.jpg";
+import CustomChecklists from "assets/images/Detailview.png";
+import PDF from "assets/images/PDF.png";
+
 function Counters() {
   return (
     <MKBox component="section" py={3}>
       <Container>
-        <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
+        <Grid container spacing={2}>
           <Grid item xs={12} md={4}>
-            <DefaultCounterCard
-              count={70}
-              suffix="+"
-              title="Coded Elements"
-              description="From buttons, to inputs, navbars, alerts or cards, you are covered"
-            />
-          </Grid>
-          <Grid item xs={12} md={4} display="flex">
-            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
-            <DefaultCounterCard
-              count={15}
-              suffix="+"
-              title="Design Blocks"
-              description="Mix the sections, change the colors and unleash your creativity"
-            />
-            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
+            <MKBox display="flex" flexDirection="column" alignItems="center">
+              <DefaultCounterCard
+                count={1}
+                title="All Projects View"
+                description="Display All Projects on a map"
+              />
+              <img src={AllProjects} alt="Allprojects" style={{ maxWidth: "100%", height: "auto" }} />
+            </MKBox>
           </Grid>
           <Grid item xs={12} md={4}>
-            <DefaultCounterCard
-              count={4}
-              title="Pages"
-              description="Save 3-4 weeks of work when you use our pre-made pages for your website"
-            />
+            <MKBox display="flex" flexDirection="column" alignItems="center">
+              <DefaultCounterCard
+                count={2}
+                title="Project"
+                description="track your hours, materials, checklists"
+              />
+              <img src={CustomChecklists} alt="Custom Checklists" style={{ maxWidth: "100%", height: "auto" }} />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <MKBox display="flex" flexDirection="column" alignItems="center">
+              <DefaultCounterCard
+                count={3}
+                title="export s pdf"
+                description="Export everything as an pdf"
+              />
+              <img src={PDF} alt="PDF" style={{ maxWidth: "100%", height: "auto" }} />
+            </MKBox>
           </Grid>
         </Grid>
       </Container>
