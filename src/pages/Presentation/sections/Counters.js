@@ -57,8 +57,8 @@ function Counters() {
             <MKBox display="flex" flexDirection="column" alignItems="center">
               <DefaultCounterCard
                 count={3}
-                title="export s pdf"
-                description="Export everything as an pdf"
+                title="export as pdf"
+                description="Export everything as a pdf"
               />
               <img src={PDF} alt="PDF" style={{ maxWidth: "100%", height: "auto" }} />
             </MKBox>
